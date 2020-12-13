@@ -5,11 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Porter</title>
         <style>
-            body{
-                background-image: url(https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2011/05/clouds-in-green-sky-800x600.jpg);
+            .tab-bar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1% 100%;
+                display: inline;
+            }
+            .video-games{
+                position: absolute;
+                padding: 10px 30px;
+                border-right: gray solid 2px;
+                border-bottom: gray solid 2px;
+                border-left: gray solid 2px;
+                background-color: lightgray;
+                color: gray;
+                left: 0;
+                top: 0;
+                cursor: pointer;
             }
         </style>
     </head>
     <body>
+        <div class="tab-bar">
+            <a href="./video-games/"><div class="video-games">Video Games</div></a>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </body>
 </html>
