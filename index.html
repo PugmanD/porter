@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Porter</title>
         <style>
+            body{
+                margin: none;
+                padding: none;
+            }
             .tab-bar{
                 position: absolute;
                 top: 0;
@@ -12,7 +16,15 @@
                 padding: 1% 100%;
                 display: inline;
             }
-            .video-games{
+            #video-games{
+                left: 0;
+                top: 0;
+            }
+            #gun{
+                left: 155px;
+                top: 0;
+            }
+            .tab{
                 position: absolute;
                 padding: 10px 30px;
                 border-right: gray solid 2px;
@@ -20,16 +32,14 @@
                 border-left: gray solid 2px;
                 background-color: lightgray;
                 color: gray;
-                left: 0;
-                top: 0;
                 cursor: pointer;
             }
         </style>
     </head>
     <body>
         <div class="tab-bar">
-            <a href="./video-games/"><div class="video-games">Video Games</div></a>
-            <div></div>
+            <a href="./video-games/"><div class="tab" id="video-games">Video Games</div></a>
+            <a href="./guns/"><div class="tab" id="gun">Guns</div></a>
             <div></div>
             <div></div>
         </div>
